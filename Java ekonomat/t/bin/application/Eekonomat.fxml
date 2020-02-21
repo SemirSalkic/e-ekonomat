@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EekonomatController">
+   <children>
+      <MenuBar layoutX="14.0" layoutY="2.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Iznajmi Opremu" />
+                  <MenuItem mnemonicParsing="false" text="Dodaj Osobu" />
+                  <MenuItem mnemonicParsing="false" text="Izbrisi Osobu" />
+                  <MenuItem mnemonicParsing="false" text="Dodaj Opremu" />
+                  <MenuItem mnemonicParsing="false" text="Izbrisi Opremu" />
+              <MenuItem fx:id="Zatvori_program" mnemonicParsing="false" text="Zatvori Program" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Prikazi Uzeto/Vraceno" />
+                  <Menu mnemonicParsing="false" text="Edituj Osobu">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Edituj Osobu" />
+                        <MenuItem mnemonicParsing="false" text="Edituj Uzeto/Vraceno" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Unos Opreme" />
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
