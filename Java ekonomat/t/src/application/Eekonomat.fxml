@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EekonomatController">
+<AnchorPane maxHeight="700.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EekonomatController">
    <children>
-      <MenuBar layoutX="14.0" layoutY="2.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-                  <MenuItem mnemonicParsing="false" text="Iznajmi Opremu" />
-                  <MenuItem mnemonicParsing="false" text="Dodaj Osobu" />
-                  <MenuItem mnemonicParsing="false" text="Izbrisi Osobu" />
-                  <MenuItem mnemonicParsing="false" text="Dodaj Opremu" />
-                  <MenuItem mnemonicParsing="false" text="Izbrisi Opremu" />
-              <MenuItem fx:id="Zatvori_program" mnemonicParsing="false" text="Zatvori Program" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Prikazi Uzeto/Vraceno" />
-                  <Menu mnemonicParsing="false" text="Edituj Osobu">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Edituj Osobu" />
-                        <MenuItem mnemonicParsing="false" text="Edituj Uzeto/Vraceno" />
-                    </items>
-                  </Menu>
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-                  <MenuItem mnemonicParsing="false" text="Unos Opreme" />
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <SplitPane dividerPositions="0.5" layoutX="210.0" layoutY="24.0" orientation="VERTICAL" prefHeight="570.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="105.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ListView layoutX="14.0" layoutY="14.0" prefHeight="270.0" prefWidth="723.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+      <Button layoutX="14.0" layoutY="178.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="215.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="288.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="141.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="325.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Button" AnchorPane.leftAnchor="14.0" />
+      <ImageView fitHeight="80.0" fitWidth="86.0" layoutX="900.0" layoutY="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../../Images/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="27.0" layoutY="-46.0" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="-46.0">
+         <image>
+            <Image url="@../../Images/81071922-bfa3-4225-9d9f-cb11cf6da62a_200x200.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
