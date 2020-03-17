@@ -13,7 +13,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="748.0">
                <children>
-                  <ListView layoutX="14.0" layoutY="14.0" prefHeight="270.0" prefWidth="723.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0" />
+                  <ListView fx:id="lv_ispis" layoutX="14.0" layoutY="14.0" prefHeight="270.0" prefWidth="723.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
@@ -26,7 +26,7 @@
       <Button layoutX="14.0" layoutY="325.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Dodaj opremu" AnchorPane.leftAnchor="14.0" />
       <Button layoutX="14.0" layoutY="178.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Edituj unos" AnchorPane.leftAnchor="14.0" />
       <Button layoutX="14.0" layoutY="362.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Izbrisi opremu" AnchorPane.leftAnchor="14.0" />
-      <Button fx:id="Izlaz" cancelButton="true" onAction="#Izlaz" layoutX="14.0" layoutY="656.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Izlaz" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <Button fx:id="Izlaz" cancelButton="true" layoutX="14.0" layoutY="656.0" mnemonicParsing="false" onAction="#Izlaz" prefHeight="30.0" prefWidth="226.0" text="Izlaz" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
       <ImageView fitHeight="80.0" fitWidth="86.0" layoutX="900.0" layoutY="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
          <image>
             <Image url="@../../Images/unnamed.jpg" />
@@ -37,9 +37,9 @@
             <Image url="@../../Images/81071922-bfa3-4225-9d9f-cb11cf6da62a_200x200.png" />
          </image>
       </ImageView>
-      <Button layoutX="250.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Osobe list" AnchorPane.topAnchor="105.0" />
-      <Button layoutX="760.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Oprema list" AnchorPane.topAnchor="105.0" />
+      <Button fx:id="btn_osobe" layoutX="250.0" layoutY="105.0" mnemonicParsing="false" onAction="#btn__osobe" prefHeight="30.0" prefWidth="226.0" text="Osobe list" AnchorPane.topAnchor="105.0" />
+      <Button fx:id="btn_oprema" layoutX="760.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Oprema list" AnchorPane.topAnchor="105.0" />
       <Button layoutX="14.0" layoutY="401.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Edituj opremu" />
-      <Button layoutX="506.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Zaduzena oprema" />
+      <Button fx:id="btn_zaduzena" layoutX="506.0" layoutY="105.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="226.0" text="Zaduzena oprema" />
    </children>
 </AnchorPane>
